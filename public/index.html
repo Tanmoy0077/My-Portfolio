@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanmoy's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+</head>
+
+<body class="text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="text-2xl font-bold text-purple-800">Tanmoy's Portfolio</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-purple-600 transition">Home</a>
+          <a href="#about" class="hover:text-purple-600 transition">About</a>
+          <a href="#education" class="hover:text-purple-600 transition">Education</a>
+          <a href="#experience" class="hover:text-purple-600 transition">Experience</a>
+          <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
+          <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none" id="menu-btn">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white w-full py-2 px-4 shadow-lg" id="mobile-menu">
+      <a href="#home" class="block py-2 hover:text-purple-600">Home</a>
+      <a href="#about" class="block py-2 hover:text-purple-600">About</a>
+      <a href="#education" class="block py-2 hover:text-purple-600">Education</a>
+      <a href="#experience" class="block py-2 hover:text-purple-600">Experience</a>
+      <a href="#projects" class="block py-2 hover:text-purple-600">Projects</a>
+      <a href="#contact" class="block py-2 hover:text-purple-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="gradient-bg text-white pt-24 pb-20 md:pt-32 md:pb-28">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Hi, I'm <span class="text-yellow-300"><br />Tanmoy Pradhan</span>
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+          Data Scientist
+        </h2>
+        <p class="text-lg mb-8 opacity-90">
+          Transforming raw data into meaningful insights that drive business
+          decisions and innovation.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#contact"
+            class="bg-white text-purple-800 px-6 py-2 rounded-full font-medium hover:bg-purple-100 transition">Contact
+            Me</a>
+          <a href="https://drive.google.com/file/d/1s18-ClLTsPOZrgB5VIs23jdtHP96uxxQ/view?usp=sharing"
+            class="border-2 border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-purple-800 transition">Download
+            CV</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="relative w-64 h-64 md:w-80 md:h-80">
+          <div class="absolute inset-0 bg-purple-300 rounded-full opacity-20 blur-xl"></div>
+          <img src="images/Portfolio.jpg" alt="Profile"
+            class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-xl floating" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 relative">
+        <span class="relative inline-block">
+          About Me
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 rounded-full"></span>
+        </span>
+      </h2>
+
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+          <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-purple-100 shadow-lg">
+            <img src="images/second_pic.jpg" alt="Profile" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="md:w-2/3 md:pl-12">
+          <h3 class="text-2xl font-semibold mb-4">
+            Data Science Undergrad with Passion for Technology
+          </h3>
+          <p class="text-gray-600 mb-2">
+            I love building data-driven applications and have worked on various projects in Computer Vision, Generative
+            AI, NLP and Data Science domain.
+          </p>
+          <p class="text-gray-600 mb-2">
+            Apart from academics and technology, I have a deep-rooted love for music. I love to play guitar.
+          </p>
+          <p class="text-gray-600 mb-6">
+            As I look toward the future, I aim to apply my knowledge to create impactful data-driven solutions that
+            address real-world challenges
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div>
+              <p class="font-medium">
+                <span class="text-purple-600">Name:</span> Tanmoy Pradhan
+              </p>
+              <p class="font-medium">
+                <span class="text-purple-600">Email:</span>
+                tanmoy.mckvie@gmail.com
+              </p>
+            </div>
+            <div>
+              <p class="font-medium">
+                <span class="text-purple-600">From:</span> West Bengal, India
+              </p>
+              <p class="font-medium">
+                <span class="text-purple-600">Experience:</span> Fresher
+              </p>
+            </div>
+          </div>
+          <div class="mb-8">
+            <h4 class="text-xl font-semibold mb-4">My Skills</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Python</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Machine Learning</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Data Science</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Deep Learning</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Data Visualization</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Generative AI</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Computer Vision</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">NLP</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Data Analysis</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Data Pre-processing</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">NumPy</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">AWS</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">GCP</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Tableau</span>
+              <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">Power BI</span>
+            </div>
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/tanmoy0077-data/"
+              class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition flex items-center">
+              <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+            </a>
+            <a href="https://www.kaggle.com/tanmoypradhan"
+              class="bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition flex items-center">
+              <i class="fab fa-kaggle mr-2"></i> Kaggle
+            </a>
+            <a href="https://github.com/tanmoy0077/"
+              class="bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-900 transition flex items-center">
+              <i class="fab fa-github mr-2"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 relative">
+        <span class="relative inline-block">
+          Education
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 rounded-full"></span>
+        </span>
+      </h2>
+
+      <div class="relative pl-16 timeline">
+        <div class="mb-12 relative timeline-item">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-purple-800">
+                B.Tech in Computer Science & Engineering (Data Science)
+              </h3>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">2021 - 2025</span>
+            </div>
+            <p class="text-lg font-semibold text-gray-600 mb-2">
+              MCKV Institute of Engineering
+            </p>
+            <p class="text-gray-600">
+              CGPA: 9.59
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-12 relative timeline-item">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-purple-800">
+                Class - XII
+              </h3>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">2020 - 2021</span>
+            </div>
+            <p class="text-lg font-semibold text-gray-600 mb-2">
+              Salkia Hindu School
+            </p>
+            <p class="text-gray-600">
+              Marks: 88.60%
+            </p>
+          </div>
+        </div>
+
+        <div class="relative timeline-item">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-purple-800">
+                Class - X
+              </h3>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">2018 - 2019</span>
+            </div>
+            <p class="text-lg font-semibold text-gray-600 mb-2">
+              Salkia Hindu School
+            </p>
+            <p class="text-gray-600">
+              Marks: 86.00%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 relative">
+        <span class="relative inline-block">
+          Work Experience
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 rounded-full"></span>
+        </span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover">
+          <div class="flex items-start mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Trainee - Data Science/AI</h3>
+              <p class="text-purple-600 font-medium">Somnetics</p>
+              <p class="text-gray-500 text-sm">Feb 2025 - Present</p>
+            </div>
+          </div>
+          <ul class="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Built multimodal RAG system enabling users to query and retrieve relevant documents across text and visual
+              inputs
+            </li>
+            <li>
+              Developed agentic workflows to automate manual tasks, significantly enhancing operational efficiency
+            </li>
+            <li>
+              Contributed in cross functional teams to integrate AI solutions into existing systems
+            </li>
+            <li>
+              Implemented document parsing and data extraction pipelines, extracting infromation from unstructured data
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover">
+          <div class="flex items-start mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-database text-purple-600 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Project Intern</h3>
+              <p class="text-purple-600 font-medium">
+                Indian Space Research Organization
+              </p>
+              <p class="text-gray-500 text-sm">Aug 2024 - Sep 2024</p>
+            </div>
+          </div>
+          <ul class="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Collaborated with a team to enhance data quality by cleaning and engineering features, resulting in
+              improved accuracy
+            </li>
+            <li>
+              Developed deep learning based systems to model process parameters, enabling accurate simulation of
+              experiments
+            </li>
+            <li>
+              Developed a propellant waste management system improving accountability of the system
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover">
+          <div class="flex items-start mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-laptop-code text-purple-600 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Project Intern</h3>
+              <p class="text-purple-600 font-medium">
+                Indian Statistical Institute
+              </p>
+              <p class="text-gray-500 text-sm">Jun 2024 - Jul 2024</p>
+            </div>
+          </div>
+          <ul class="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Explored various techniques of image processing, computer vision and deep learning
+            </li>
+            <li>
+              Collaborated in a 2-person team and implemented Vanilla GAN, DCGAN, WGAN and Cycle GAN from scratch
+            </li>
+            <li>
+              Awarded with special mention certificate for best project work
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover">
+          <div class="flex items-start mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-project-diagram text-purple-600 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Spring-Boot Developer Trainee</h3>
+              <p class="text-purple-600 font-medium">Web Skitters Academy</p>
+              <p class="text-gray-500 text-sm">Feb 2024 - Mar 2024</p>
+            </div>
+          </div>
+          <ul class="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Developed proficiency in Spring Boot development. Learned core concepts of MVC design pattern and REST API
+            </li>
+            <li>Designed backend of a feedback website using Spring Boot</li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 relative">
+        <span class="relative inline-block">
+          My Projects
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 rounded-full"></span>
+        </span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/Themis.jpg" alt="Predictive Maintenance" class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Themis: AI powered Legal Assistant
+              </h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                LLM powered legal document assistant with detailed contract review and case outcome prediction.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">LangGraph</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Pinecone</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                Themis: AI powered Legal Assistant
+              </h3>
+              <p class="text-center mb-4">
+                Developed a Legal document assistant with support for contract review, clause extraction, and case
+                outcome prediction.
+              </p>
+              <a href="https://github.com/Tanmoy0077/Themis"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/bicycle.jpg" alt="Customer Segmentation" class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Smart Bicycle Parking System
+              </h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                Smart bicycle parking system for optimizing space and reducing congestion.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">React-Native</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Recommendation System</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Machine Learning</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                Smart Bicycle Parking System
+              </h3>
+              <p class="text-center mb-4">
+                Developed a smart bicycle parking system for optimizing space and reducing congestion.
+              </p>
+              <a href="https://github.com/Tanmoy0077/Parkwise"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View
+                Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/resume_chek.jpg" alt="Sentiment Analysis"
+                  class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Resume Analyzer
+              </h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                NLP powered resume analyzer to quickly check how your resume aligns with the job description.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Spacy</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Streamlit</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                Resume Analyzer
+              </h3>
+              <p class="text-center mb-4">
+                Resume analyzer with action verb analysis, buzzword detection, missing skills analysis and JD alignment
+                chekcer.
+              </p>
+              <a href="https://github.com/Tanmoy0077/Resume-Analyzer"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View
+                Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/Credit_Card.jpg" alt="Fraud Detection" class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Credit Card Fraud Detection</h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                Deep learning model that detects fraudulent transactions in real-time with 99% precision.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Tensorflow</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Anomaly Detection</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                Credit Card Fraud Detection
+              </h3>
+              <p class="text-center mb-4">
+                Implemented ML and Autoencoder models for detecting fraudulent transactions in real-time.
+              </p>
+              <a href="https://github.com/Tanmoy0077/Credit-Card-Fraud-Detection"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View
+                Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/pytorch.webp" alt="Recommendation Engine"
+                  class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                GAN Implementation from Scratch in PyTorch
+              </h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                Implemented Vanilla GAN, DCGAN and WGAN from scratch in PyTorch.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">PyTorch</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">GAN</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                GAN Implementation from Scratch in PyTorch
+              </h3>
+              <p class="text-center mb-4">
+                Implemented Vanilla GAN, DCGAN and WGAN from scratch in PyTorch.
+              </p>
+              <a href="https://github.com/Tanmoy0077/GAN-Implementations-in-PyTorch"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View
+                Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card h-full">
+          <div class="project-inner h-full">
+            <div class="project-front bg-white p-6 rounded-xl shadow-md h-full flex flex-col">
+              <div class="mb-4">
+                <img src="images/helmet.jpg" alt="Demand Forecasting" class="w-full h-40 object-cover rounded-lg" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Helmet Detection from traffic footage</h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                Helmet detection on riders from traffic footage using YOLOv5.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">YOLOv5</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Object Detection</span>
+              </div>
+            </div>
+            <div
+              class="project-back absolute inset-0 bg-purple-600 text-white p-6 rounded-xl flex flex-col justify-center items-center">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                Helmet Detection from traffic footage
+              </h3>
+              <p class="text-center mb-4">
+                Fine-tuned YOLOv5 model for detecting helmet from traffic footage.
+              </p>
+              <a href="https://github.com/Tanmoy0077/Helmet-Detection-using-YOLOv5"
+                class="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium mt-4">View
+                Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://github.com/tanmoy0077/"
+          class="inline-block bg-purple-600 text-white px-6 py-3 rounded-full font-medium hover:bg-purple-700 transition">
+          View All Projects <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 relative">
+        <span class="relative inline-block">
+          Get In Touch
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 rounded-full"></span>
+        </span>
+      </h2>
+
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+          <h3 class="text-2xl font-semibold mb-4">
+            Let's Talk About Your Project
+          </h3>
+          <p class="text-gray-600 mb-8">
+            I'm always open to discussing new projects, creative ideas or
+            opportunities to be part of your vision. Feel free to reach out
+            through any of the channels below.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i class="fas fa-envelope text-purple-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Email Me</h4>
+                <p class="text-gray-600">tanmoy.mckvie@gmail.com</p>
+              </div>
+            </div>
+
+
+
+            <div class="flex items-start">
+              <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i class="fas fa-map-marker-alt text-purple-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Location</h4>
+                <p class="text-gray-600">West Bengal, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h4 class="font-semibold mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/tanmoy0077-data/"
+                class="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-purple-100 hover:text-purple-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.kaggle.com/tanmoypradhan"
+                class="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-purple-100 hover:text-purple-600 transition">
+                <i class="fab fa-kaggle"></i>
+              </a>
+              <a href="https://github.com/tanmoy0077/"
+                class="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-purple-100 hover:text-purple-600 transition">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <form id="contact-form" class="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+              <input type="text" id="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+              <input type="email" id="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-4">
+              <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+              <input type="text" id="subject"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+              <textarea id="message" rows="5"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition">
+              Send Message <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="/" class="text-2xl font-bold text-purple-400">Tanmoy's Portfolio</a>
+          <p class="mt-2 text-gray-400">
+            Transforming data into insights that drive innovation.
+          </p>
+        </div>
+
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/in/tanmoy0077-data/" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="https://www.kaggle.com/tanmoypradhan" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-kaggle"></i>
+          </a>
+          <a href="https://github.com/tanmoy0077/" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 mb-4 md:mb-0">
+          © 2025 Tanmoy Pradhan. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-8 right-8 bg-purple-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
